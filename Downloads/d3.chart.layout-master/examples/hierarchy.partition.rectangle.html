@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rectangle Partition Example</title>
+    <script src="../lib/d3.min.js"></script>
+    <script src="../lib/d3.chart.min.js"></script>
+    <script src="../d3.chart.layout.hierarchy.js"></script>
+    <style>
+      html {
+        display: table;
+        margin: auto;
+        width: 100%; }
+
+      #vis {
+        width: 60%;
+        height: 500px;
+        margin: auto; }
+
+      rect {
+        stroke: #eee;
+        fill: #aaa;
+        fill-opacity: .8; }
+
+      rect.parent {
+        cursor: pointer;
+        fill: steelblue; }
+
+      text {
+        pointer-events: none; } 
+    </style>
+  </head>
+  <body>
+
+    <div id="vis"></div>
+
+    <script>
+      (function() {
+
+        d3.json("data/flare.json", function(error, json) {
+
+          var partition = d3.select("#vis").append("svg")
+
+            .chart("partition.rectangle")
+
+              .value("size")
+              //.zoomable([1, 5])
+              .collapsible()
+              //.duration(200)
+              ;
+
+          partition.draw(json);
+
+        });
+      }());
+    </script>
+  </body>
+</html>

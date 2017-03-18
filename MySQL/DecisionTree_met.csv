@@ -1,0 +1,182 @@
+,Node Name,Node Description,Parent Node Number,Size,Other Links,Date
+1,Metro Osd,Metro above Station Development for Pitt St. North Development,,1000,,2016/06/20 00:00:00
+1,Station,Below ground Station Design,1,1000,,2016/06/21 00:00:00
+1,Podium,Above Ground Design,1,1000,,2016/06/21 00:00:00
+1,Tower,Above Podium Design,1,1000,,2016/06/21 00:00:00
+1,Station  Bench Option,Station entry occupying Pitt and Park St corner,2,1000,,2016/08/18 00:00:00
+1,Station Linear,Station entry occupying entire front of Park St,2,1000,,2016/08/18 00:00:00
+1,Station new,Station entry occupying small space on park St.,2,1000,,2016/08/18 00:00:00
+1,TSE - option 1,Centre between tunnels,2,1000,,2016/08/19 00:00:00
+1,TSE - option 2,"Wide TSE, short tunnels",2,1000,,2016/08/19 00:00:00
+1,TSE - option 3,"Wide TSE, short tunnels, additional access to platforms near end of platform",2,1000,,2016/08/19 00:00:00
+1,Access to Platform,"last sets of escalators lands on platform level within the station,all esacalators run parallel",8,1000,,2016/08/24 00:00:00
+1,Car Park above Ground,"Car park in podium, above ground Level",3,1000,,2016/08/18 00:00:00
+1,Car park below Ground,Car park below loading,3,1000,2,2016/08/18 00:00:00
+1,Podium Linear Lobby,Lobby along Park St,3,1000,,2016/08/18 00:00:00
+1,Podium Park St Lobby,Lobby at Centr of building facing Park St,3,1000,,2016/08/18 00:00:00
+1,Podium Raised Lobby,Lobby at Ground and Level above,3,1000,,2016/08/18 00:00:00
+1,End of Trip ,L01 above loading dock,3,1000,,2016/08/23 00:00:00
+1,Secure Line,Identifying secure line at platform level,15,1000,,2016/08/23 00:00:00
+1,Lift Core compact,"Core North South direction, 3 Banks of 6 lifts",4,1000,,2016/08/15 00:00:00
+1,Lift Core Linear,"Core East West Direction, 13 Lifts",4,1000,,2016/08/15 00:00:00
+1,West Core,Core located at Western end of Tower,4,1000,,2016/08/18 00:00:00
+1,Bench Core,Core Located at North West Corner of Tower,4,1000,,2016/08/18 00:00:00
+1,North Core,Core located North of Tower,4,1000,,2016/08/18 00:00:00
+1,South Core,Core Located South of Tower facing park St,4,1000,,2016/08/18 00:00:00
+1,Cruciform Core,Lift banks in East West Direction,22,1000,,2016/08/23 00:00:00
+1,North South Core,Lift Banks in North South Direction,22,1000,,2016/08/23 00:00:00
+1,"North South Core , Common lobby","Lift Banks in North South Direction, Lobby lifts to the South and Centre of core",26,1000,,2016/08/23 00:00:00
+1,Tower envelope ANZ reverse,envelope fitting into the reverse shadow of ANZ building,4,1000,,2016/08/25 00:00:00
+1,Tower envelope solar access plane,envelope fitting into current solar access plane,4,1000,,2016/08/25 00:00:00
+1,Tower max envelope,envelope fitting into the reverse shadow of 201 Elizabeth St ignoring solar plane ,4,1000,,2016/08/25 00:00:00
+1,typical tower plans,presentation how typical floors with core could look like,26,1000,,2016/08/25 00:00:00
+1,tower massing FSR 15 to 1,"tower height to fit FSR 15 to1, ignoring sun access plane",30,1000,,2016/09/01 00:00:00
+1,tower massing FSR 11 to 1,tower to fit into sun current sun access plane achieving 11 to 1 FSR,29,1000,,2016/09/01 00:00:00
+1,tower massing FSR 22 to 1,tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1,30,1000,,2016/09/01 00:00:00
+1,tower massing FSR 37 to 1,tower to fit into reverse shadow of 201 Elizabeth st with not setbacks above podium,30,1000,,2016/09/01 00:00:00
+1,tower massing FSR 27 to 1,tower to fit into reverse shadow of 201 Elizbeth achieving FSR 27 to 1 through reduced set backs,30,1000,,2016/09/01 00:00:00
+1,tower massing FSR 17 to 1,tower to fit into reverse shadow of ANZ building,28,1000,,2016/09/01 00:00:00
+1,tower massing FSR 22 to 1,tower to reduce impact on memorial with set backs,4,1000,,2016/09/01 00:00:00
+1,Tower massing FSR 15 to 1,"tower to sit within reverse shadow of 201 Elizabeth st, but FSR max as by Sydney LEP",34,1000,,2016/09/05 00:00:00
+1,tower massing FSR 22 to 1,tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1,34,1000,,2016/09/05 00:00:00
+1,tower massing FSR 37 to 1,tower to fit into reverse shadow of 201 Elizabeth st with not setbacks above podium,35,1000,,2016/09/05 00:00:00
+1,tower massing FSR 27 to 1,tower to fit into reverse shadow of 201 Elizbeth achieving FSR 27 to 1 through reduced set backs,36,1000,,2016/09/05 00:00:00
+1,tower massing FSR 11 to 1,tower to fit into sun current sun access plane achieving 11 to 1 FSR,33,1000,,2016/09/05 00:00:00
+1,tower massing FSR 14 to 1,tower to fit into sun current sun access plane achieving 14 to 1 FSR with reduced set backs,33,1000,,2016/09/05 00:00:00
+1,tower massing FSR 17 to 1,tower to fit into reverse shadow of ANZ building,37,1000,,2016/09/05 00:00:00
+1,tower massing FSR 22 to 1,tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1,40,1000,,2016/09/05 00:00:00
+1,East West Core,"Lift banks in East West direction, further developed with services",25,1000,,2016/09/05 00:00:00
+1,North South Core,"Lift Banks in North South direction, further developed with services",26,1000,,2016/09/05 00:00:00
+1,Carp Park Entry North East,"Car park entry at North East Corner of Property, 4 levels below ground",13,1000,,2016/09/06 00:00:00
+1,"Tower massing FSR 15 to 1, Shadow","tower to sit within reverse shadow of 201 Elizabeth st, but FSR max as by Sydney LEP, Overshadowing study",39,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 22 to 1, Shadow","tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Overshadowing study",40,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 37 to 1, Shadow","tower to fit into reverse shadow of 201 Elizabeth st with not setbacks above podium, Overshadowing study",41,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 27 to 1, Shadow","tower to fit into reverse shadow of 201 Elizbeth achieving FSR 27 to 1 through reduced set backs, Overshadowing study",42,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 11 to 1, Shadow","tower to fit into sun current sun access plane achieving 11 to 1 FSR, Overshadowing study",43,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 14 to 1, Shadow","tower to fit into current sun access plane achieving 14 to 1 FSR with reduced set backs, Overshadowing study",44,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 17 to 1, Shadow","tower to fit into reverse shadow of ANZ building, Overshadowing study",45,1000,,2016/09/07 00:00:00
+1,"tower massing FSR 22 to 1, Shadow","tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Overshadowing study",46,1000,,2016/09/07 00:00:00
+1,Envelope Elevation Study,"tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Overshadowing study",51,1000,,2016/09/08 00:00:00
+1,Envelope Elevation Study,"tower to fit into current sun access plane achieving 14 to 1 FSR with reduced set backs, Overshadowing study",55,1000,,2016/09/08 00:00:00
+1,Envelope Elevation Study,"tower to fit into reverse shadow of ANZ building, Overshadowing study",56,1000,,2016/09/08 00:00:00
+1,Envelope Elevation Study,"tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Overshadowing study",57,1000,,2016/09/08 00:00:00
+1,Station Option 8,"Stacked Escalators, Secure Line on Concourse",11,1000,,2016/09/08 00:00:00
+1,Station Option 9,"Escalators in line, Secure line on Concourse level",11,1000,,2016/09/08 00:00:00
+1,Context PhotoShop,"tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Overshadowing study",51,1000,,2016/09/12 00:00:00
+1,Context PhotoShop,"tower to fit into sun current sun access plane achieving 14 to 1 FSR with reduced set backs, Overshadowing study",55,1000,,2016/09/12 00:00:00
+1,Context PhotoShop,"tower to fit into reverse shadow of ANZ building, Overshadowing study",56,1000,,2016/09/12 00:00:00
+1,"Station Option 5, WORKSHOP","Escalators in line, Secure line on Concourse level, secure lift limitations",11,1000,,2016/09/14 00:00:00
+1,"Station Option 8, WORKSHOP","Stacked Escalators, Secure Line on Concourse",62,1000,,2016/09/14 00:00:00
+1,"Station Option 9, WORKSHOP","Escalators in line, Secure line on Concourse level",63,1000,,2016/09/14 00:00:00
+1,Core Layouts,"Core Layouts for Low, Mid and High Rise including some services",47,1000,,2016/09/15 00:00:00
+1,Entry Ramp - Park St - Option 1,Max cross fall 1 in 35,15,1000,,2016/09/15 00:00:00
+1,Entry Ramp - Park St - Option 2,Max cross fall 1 in 40,15,1000,,2016/09/15 00:00:00
+1,Entry Ramps at Castlereigh St,Internal landing level at 24.000,15,1000,,2016/09/15 00:00:00
+1,Entry Ramp at Pitt St,Internal landing level at 22.750,74,1000,,2016/09/15 00:00:00
+1,Structural Review Core,drawings issued to consultant team,70,1000,,2016/09/16 00:00:00
+1,First Pass Structure,incorporating structural review into model,75,1000,63,2016/09/20 00:00:00
+1,Test Residential layouts,6 Appartments per floor,4,1000,,2016/09/20 00:00:00
+1,Test Residential layouts,7 Appartments per floor,4,1000,,2016/09/20 00:00:00
+1,Test Residential layouts,8 Appartments per floor,4,1000,,2016/09/20 00:00:00
+1,"tower massing FSR 17 to 1, push up","tower to fit into reverse shadow of 201 Elizbeth achieving FSR 17 to 1, with commercial pushed up",51,1000,,2016/09/21 00:00:00
+1,tower massing resindential only,tower to fit into reverse shadow of 201 Elizbeth but Residential only,51,1000,79,2016/09/21 00:00:00
+1,Services Stacking - North,"Skinny North stack in tower, Services consolidated North East against Castlereigh st",76,1000,,2016/09/21 00:00:00
+1,Servcices Stacking - Pancake,"Top most podium level is services only, Deeper tower stack, reduced in height services stack North East against Castlreraigh st",76,1000,,2016/09/21 00:00:00
+1,Car Park,"Further developed car park, showing car park access and parking layout",49,1000,,2016/09/21 00:00:00
+1,Services and Structure Review Station,"Core structure down to B5, Main services Mech lines",76,1000,,2016/09/23 00:00:00
+1,Structure Workshop,Structure review,85,1000,,2016/09/26 00:00:00
+1,QS Issue,Issue current set to Quantity surveyor,86,1000,"84,81",2016/09/27 00:00:00
+1,Building Design - Carved Solid,"Building outlined defined by shadow of 201 Elizabeth St, carve away",64,1000,,2016/09/28 00:00:00
+1,Building Design - Shifted Masses,"Building outlined defined by shadow of 201 Elizabeth St, cubik approach",64,1000,,2016/09/28 00:00:00
+1,Structural Review,,86,1000,,2016/09/29 00:00:00
+1,Car park Option - Double lanes ,dual lanes all the way down to B4,84,1000,,2016/09/29 00:00:00
+1,Car Park options - Single lanes,single lane acces from B1 down to B4,84,1000,,2016/09/29 00:00:00
+1,Car Park option  - Lift,lift access from B1 down to B4,84,1000,,2016/09/29 00:00:00
+1,Glazing Study - Opaque,carved shape with opaque facade,88,1000,,2016/10/03 00:00:00
+1,Glazing Study - Transparent,carved shape with transparent facade,88,1000,,2016/10/03 00:00:00
+1,Building Design study,Elevations of vareis building faces and axos of the same carved shape,88,1000,,2016/10/04 00:00:00
+1,Car park Option - Double lanes ,dual lanes all the way down to B4,91,1000,,2016/10/04 00:00:00
+1,Car Park options - Single lanes,single lane acces from B1 down to B4,92,1000,,2016/10/04 00:00:00
+1,Car Park option  - Lift,lift access from B1 down to B4,93,1000,,2016/10/04 00:00:00
+1,Elevation Study - Podium,"varies street elevations highlighting: station entrance, commercail lobby, services stack",74,1000,82,2016/10/04 00:00:00
+1,renders,Building massing placed into photos,88,1000,,2016/10/04 00:00:00
+1,Structure review,transfer columns from tower at top of podium,90,1000,,2016/10/04 00:00:00
+1,Typical Podium plans,"Including End of Trip, commercial lobby at ground floor, Mid, Low and High rise",100,1000,,2016/10/04 00:00:00
+1,3D Render podium,renders shwoing podium from varies street angles,103,1000,,2016/10/05 00:00:00
+1,Street Elevation,"tower to fit into current sun access plane achieving 14 to 1 FSR, Park St Elevation",59,1000,,2016/10/05 00:00:00
+1,Street Elevation,"tower to fit into reverse shadow of ANZ building, Park St Elevation",60,1000,,2016/10/05 00:00:00
+1,Street Elevation,"tower to fit into reverse shadow of 201 Elizbeth achieving FSR 22 to 1, Park St Elevation",57,1000,,2016/10/05 00:00:00
+1,"Shadow impact, building envelope",shadpow on Hyde park from 1pm to 2pm,106,1000,,2016/10/06 00:00:00
+1,Setbacks to building envelope - carve 1,flat top,106,1000,,2016/10/06 00:00:00
+1,Setbacks to building envelope - carve 2,sloping western facade,88,1000,,2016/10/06 00:00:00
+1,Ground Plane resolution,how groundplane interaccts with B1 and Podium level 01,103,1000,,2016/10/07 00:00:00
+1,Core Toilet option 1,Male toilets North of centre lift bank,82,1000,,2016/10/10 00:00:00
+1,Core toilet option 2,Female toilets North of centre lift bank,82,1000,,2016/10/10 00:00:00
+1,Updated building form,Added more slope to eastern facade,109,1000,,2016/10/10 00:00:00
+1,Updated building form,"Added more slope to eastern facade, added axos Hyde  Park",114,1000,,2016/10/10 00:00:00
+1,Updated building form,Added more slope to eastern facade,115,1000,,2016/10/12 00:00:00
+1,Station update,Developed Podium facade,104,1000,,2016/10/12 00:00:00
+1,Context Image update,update of context image with latest carved form,116,1000,,2016/10/13 00:00:00
+1,Bike parking,show bike parking in podium,117,1000,,2016/10/14 00:00:00
+1,Street Elevation,Updated elevations with sloping West Tower,110,1000,117,2016/10/17 00:00:00
+1,Overshadowing Analysis,Using sloped tower,120,1000,,2016/10/18 00:00:00
+1,Mass renders,simple renders showing envelope and building shape,121,1000,109,2016/10/18 00:00:00
+1,Floor plan update Mid level,showing mide level core and main structure,86,1000,,2016/10/26 00:00:00
+1,Commercial Lobby entry study,internal stairs to lobby,117,1000,71,2016/10/27 00:00:00
+1,Podium only Perspectives,To show station without tower above,123,1000,,2016/10/27 00:00:00
+1,Services diagrams,Services above and below ground,85,1000,,2016/10/27 00:00:00
+1,Podium only Perspectives,to show podium from high and low level,124,1000,,2016/10/28 00:00:00
+1,Podium Sections,demarcate station from podium,126,1000,125,2016/10/28 00:00:00
+1,Demarcation Pack,shows demarcation between OSD and Station,127,1000,,2016/11/01 00:00:00
+1,Deamrcation pack revised,"Added axos, plans",128,1000,,2016/11/04 00:00:00
+1,Lift option,"adding lift from concourse to platform, escalators to platform are at 90 angle",11,1000,,2016/11/14 00:00:00
+1,Revised Structure - option 1,shear wall either side of centre lift bank,102,1000,,2016/11/05 00:00:00
+1,Revised Structure - option 2,major transfer wall at centre of centre lift bank,102,1000,,2016/11/05 00:00:00
+1,Station option boomerang - option 1,"escalator in boomrang formation, T-flow at concourse level, station lift aligned to escalators",11,1000,,2016/11/15 00:00:00
+1,Station option boomerang - option 2,"escalator in boomrang formation, T-flow at concourse level, station lift perpendicular to facade",11,1000,,2016/11/15 00:00:00
+1,Station Option 3,"parallel escalators, T-flow at concourse, lift to platform centre",117,1000,,2016/11/15 00:00:00
+1,Building Form - shaping,lots of slantd edges,116,1000,,2016/11/16 00:00:00
+1,Station Option 4,"parallel scalators, T-flow at concourse, lifts to platform outbound",135,1000,,2016/11/17 00:00:00
+1,Structure comments on boomerang,"transfers below ground plane, at B1 level",133,1000,134,2016/11/18 00:00:00
+1,Building Form ,rectalinear with facade kinking in to varies degrees ,89,1000,,2016/11/18 00:00:00
+1,Massing study - Option 1,"two defined volumnes facing park st, paralle to park st",139,1000,,2016/11/21 00:00:00
+1,Massing study - Option 2,two defined volumnes facing park st. angled of park st,139,1000,,2016/11/21 00:00:00
+1,Services - Option 1,discussion around plant layour for new station option,133,1000,,2016/11/21 00:00:00
+1,Services - Option 2,discussion around plant layour for new station option,134,1000,,2016/11/21 00:00:00
+1,Services - Option 3,discussion around plant layour for new station option,135,1000,,2016/11/21 00:00:00
+1,Services - Option 4,discussion around plant layour for new station option,137,1000,,2016/11/21 00:00:00
+1,Adit extent clarification,"Distance to opposing property, depth,  min distance to secure line from escalator run off",133,1000,134,2016/11/24 00:00:00
+1,Goods Lift option 1,along norther boundary,70,1000,,2016/11/24 00:00:00
+1,Goods Lift option 2,in centre core,70,1000,,2016/11/24 00:00:00
+1,Station Option 2,"EFFICIENT 'T'-PEDESTRIAN FLOW ,LESS EFFICIENT PITT + CASTLE FLOWS,INCREASED STREET ACTIVATION ,EASTERN LIFT RELOCATIONS,WESTERN LIFT QUEUE RESTRICTIONS ,OSD LIFT RESTRICTIONS,STRUCTURAL IMPACT AT PERIMETER ,BIKE STORAGE REQUIRED,DDA LEVEL CHALLENGES",132,1000,,2016/11/28 00:00:00
+1,Station Option 4,"EFFICIENT 'T'-PEDESTRIAN FLOW, parallel escalators",137,1000,,2016/11/28 00:00:00
+1,Station Option 2,TA input to Station design,149,1000,,2016/11/28 00:00:00
+1,Station Option 4,TA input to Station design,150,1000,,2016/11/28 00:00:00
+1,Station Option 2,revised adit layout to incorporate restrictions,151,1000,,2016/11/29 00:00:00
+1,Station Option 4,revised adit layout to incorporate restrictions,152,1000,,2016/11/29 00:00:00
+1,TES riser path,how TES comes up from Station,85,1000,,2016/12/07 00:00:00
+1,Facade treatment Options,varies facade options for tower,95,1000,,2016/12/14 00:00:00
+1,Daylight study,daylight on facade,95,1000,156,2016/12/16 00:00:00
+1,current drawing package,set of drawings capturing current status,154,1000,"145,148,138",2016/12/16 00:00:00
+1,Landscape update,landscape to facade / higher levels,157,1000,156,2016/12/16 00:00:00
+1,Structural update,update to latest plans,138,1000,"154, 158",2016/12/19 00:00:00
+1,Structural mark ups,"Low rise core transfer, Structural concept on Ground floor",160,1000,,2016/12/21 00:00:00
+1,Traffic Update,"traffic update on car parking, end of trip, entry area",158,1000,"119, 111, 97",2016/12/21 00:00:00
+1,Podium updates,"update to services stack, crash deck layout",127,1000,145,2017/01/11 00:00:00
+1,Structural mark ups,Column transfer mark ups above Podium,161,1000,,2017/01/11 00:00:00
+1,Landscape Podium,"Initial concepts for wintergarden, podium roof",159,1000,,2017/01/12 00:00:00
+1,New Building Form - winding curves,", Panel would like to see a slender tower to reduce the mass. The design
+should be aware and respond to the cluster of buildings nearby. Reducing the
+FSR will assist in reducing mass and reduce the planning risk.",30,1000,,2017/01/13 00:00:00
+1,New Building Form - stacked boxes,", Panel would like to see a slender tower to reduce the mass. The design
+should be aware and respond to the cluster of buildings nearby. Reducing the
+FSR will assist in reducing mass and reduce the planning risk.",30,1000,,2017/01/13 00:00:00
+1,New Building Form - diamond shards,", Panel would like to see a slender tower to reduce the mass. The design
+should be aware and respond to the cluster of buildings nearby. Reducing the
+FSR will assist in reducing mass and reduce the planning risk.",30,1000,,2017/01/13 00:00:00
+1,New Building Form - Cone,", Panel would like to see a slender tower to reduce the mass. The design
+should be aware and respond to the cluster of buildings nearby. Reducing the
+FSR will assist in reducing mass and reduce the planning risk.",30,1000,,2017/01/13 00:00:00
+1,New Building Form - slanted edges,", Panel would like to see a slender tower to reduce the mass. The design
+should be aware and respond to the cluster of buildings nearby. Reducing the
+FSR will assist in reducing mass and reduce the planning risk.",30,1000,135,2017/01/13 00:00:00

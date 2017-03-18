@@ -1,0 +1,47 @@
+{
+  "name": "d3.chart.layout",
+  "description": "Reusable D3 hierarchy layouts built with d3.chart",
+  "homepage": "https://github.com/bansaghi/d3.chart.layout/",
+  "version": "0.3.0",
+  "author": {
+    "name": "Anna Bansaghi",
+    "email": "anna.bansaghi@mamikon.net",
+    "url": "http://mamikon.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bansaghi/d3.chart.layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bansaghi/d3.chart.layout/issues"
+  },
+  "license": {
+    "type": "BSD",
+    "url": "https://github.com/bansaghi/d3.chart.layout/blob/master/LICENSE-BSD"
+  },
+  "keywords": [
+    "d3.js",
+    "visualization",
+    "layout",
+    "hierarchy"
+  ],
+  "dependencies": {
+    "d3": "^3.5.3",
+    "d3.chart": "^0.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "files": [
+    "lib",
+    "src",
+    "LICENSE-BSD"
+  ]
+}

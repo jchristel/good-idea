@@ -1,0 +1,9 @@
+﻿Email message file names are saved with the following format in Windows Explorer:
+
+•	Date and timestamp of when the mail was sent (the time is saved in Universal Time / Greenwich Mean Time).
+•	followed by a four character 'hash' created from the contents of the body of the mail. If the hash codes differ, Project Center identified a difference in the body of the email.
+•	followed by a portion of the sender's email address.
+•	followed by the message subject (or portion there-of).
+
+
+WILLIS LIM

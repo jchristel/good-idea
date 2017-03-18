@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nested Pack Example</title>
+    <script src="../lib/d3.min.js"></script>
+    <script src="../lib/d3.chart.min.js"></script>
+    <script src="../d3.chart.layout.hierarchy.js"></script>
+    <style>
+      html {
+        display: table;
+        margin: auto;
+        width: 100%; }
+
+      #vis {
+        width: 60%;
+        height: 500px;
+        margin: auto; }
+
+      text {
+        font: 12px sans-serif;
+        pointer-events: none; }
+
+      .parent text {
+        fill: #1f77b4; }
+
+      circle {
+        fill: #ccc;
+        stroke: #999; }
+
+      .parent circle {
+        fill: #1f77b4;
+        fill-opacity: 0.1;
+        stroke: steelblue; }
+
+      .parent:hover circle {
+        stroke: #ff7f0e;
+        stroke-width: 0.5px; }
+    </style>
+  </head>
+  <body>
+
+    <div id="vis"></div>
+
+    <script>
+      (function() {
+
+        d3.json("data/flare.json", function(error, json) {
+
+          var pack = d3.select("#vis").append("svg")
+
+            .chart("pack.nested")
+
+              //.diameter(200)
+              .value("size")
+              //.zoomable([1, 5])
+              .collapsible()
+              //.duration(200)
+              ;
+
+          pack.draw(json);
+
+        });
+      }());
+    </script>
+  </body>
+</html>
