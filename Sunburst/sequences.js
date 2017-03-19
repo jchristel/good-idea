@@ -1,4 +1,4 @@
-var widthOverall = 900;
+var widthOverall = 800;
 var heightOverall = 900;
 
 var widthGraphics = widthOverall / 3 *2,
