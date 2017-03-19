@@ -43,7 +43,7 @@ body {
 	background:#eee;			/* right column background colour */
 }
 .blogstyle .colmid {
-	right:25%;				/* width of the right column */
+	right:15%;				/* width of the right column */
 	background:#f4f4f4;		/* center column background colour */
 }
 .blogstyle .colleft {
