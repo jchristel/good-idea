@@ -55,7 +55,7 @@ body {
 	left:52%;				/* 100% plus left padding of center column */
 }
 .blogstyle .col2 {
-	width:21%;				/* Width of left column content (column width minus padding on either side) */
+	width:31%;				/* Width of left column content (column width minus padding on either side) */
 	left:56%;				/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
 }
 .blogstyle .col3 {
