@@ -33,11 +33,34 @@ var formatDate = d3.timeFormat("%Y-%m-%d");
 var dateRangeOldest = new Date(),
     dateRangeNewest = new Date(1000); //get a very early start date...
 
+//area briefed over designed range
+var areaRangeOverMin =0,
+    areaRangeOverMax =100;
+
+//area briefed under designed range
+var areaRangeUnderMin =0,
+    areaRangeUnderMax =100;
+
+
+//area briefed designed within 1% range 
+var areaRangeMetMin =0,
+    areaRangeMetMax =100;
+
 //y axis scale for data slider 
 var yScaleDateSlider = d3.scaleTime();  
 
 //variable returning a colour value
 var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+// colour scales used to indicate how well briefed area was met
+var colorRed = d3.scaleLinear.domain("Reds")
+    .domain(0,100);
+var colorGreen = d3.scaleLinear.domain("Greens")
+    .domain(0,100);
+var colorBlue = d3.scaleLinear.domain("Blues")
+    .domain(0,100);
+
+var colorNotBriefed = d3.rgb(0,0,0);
 
 var partition = d3.partition();
 
@@ -83,23 +106,35 @@ var svg_dataDetailed = d3.select("body").select("div.col3");
 //------------------------------------------------------------------ entry 
 
 //method creating the sunburst diagram
-d3.json("../Data/flare_2_1.json", function (error, root) {
+d3.json("../Data/20170323_area.json", function (error, root) {
     if (error) throw error;
 
     //setting up data for sunburst diagram
     root = d3.hierarchy(root);
     
-    
-    
     //returns 1000 if this is a leaf node (no children) ...means i do not need 
     // a size property in my json data
     root.sum(function (d) { return (d.children ? 0 : 1000); });
 
+   //get the ranges for over and under and equal briefed area
 
-
-    //get the oldest and newest date
     partition(root).descendants().forEach(function (d)
     {
+        //get the absolute value of briefed minus designed area
+        var areaCheck = Math.abs(d.data.areaBriefed-d.data.areaDesigned);
+        var onePercent = d.data.areaBriefed*0.01;
+
+        //check areas designed are within 1% band (above or below) of area briefed
+        if (onePercent<areaCheck && d.data.areaBriefed>d.data.areaDesigned) {
+            //under required area outside 1% range
+        }else{
+            if (onePercent<areaCheck && d.data.areaBriefed<d.data.areaDesigned) {
+                //over required area outside 1% range
+            }else   
+            {
+                //inside briefed area range
+            }
+        }
         //check whether date is older than oldest date
         if (parseDate(d.data.Date)<=dateRangeOldest) {
             dateRangeOldest = parseDate(d.data.Date);
@@ -130,12 +165,14 @@ d3.json("../Data/flare_2_1.json", function (error, root) {
       .text(function (d) {return d.data.department;});
     selection.append("subdepartment")
       .text(function (d) { return d.data.subdepartment; });
-    selection.append("functionalgroup")
-      .text(function (d) { return d.data.functionalgroup; });
-    selection.append("areabriefed")
-      .text(function (d) { return d.data.areabriefed; });
-    selection.append("areadesigned")
-      .text(function (d) { return d.data.areadesigned; });
+    selection.append("functionalGroup")
+      .text(function (d) { return d.data.functionalGroup; });
+    selection.append("areaBriefed")
+      .text(function (d) { return d.data.areaBriefed; });
+    selection.append("areaDesigned")
+      .text(function (d) { return d.data.areaDesigned; });
+    selection.append("areaDifference")
+        .text(function(d){return d.areaBriefed-d.areaDesigned;});
     selection.append("id")
       .text(function (d) { return d.data.Id; });
 });
@@ -196,42 +233,7 @@ function onClick(d) {
                     d.data.description + "<br>" +
                     otherLinks + "<br>" + "<br>";
                 return myData;
-            })
-        .on("click", onClickSummary);
-}
-
-//function displaying additional test data in third column
-//also changing class of div in second column to high light selection
-function onClickSummary(d)
-{
-    var id = d.data.Id;
-
-    var myTestData = [id + "<br>"+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat lacus a risus efficitur condimentum. Morbi sed neque in erat molestie sodales. Sed euismod accumsan velit. Sed vel viverra elit. Integer sit amet orci venenatis lectus mollis commodo. Mauris porta est quam, gravida ullamcorper odio rhoncus eget. Nam elementum aliquet arcu, ac egestas tellus iaculis ut. Morbi gravida mattis iaculis. Phasellus auctor consectetur nunc. Curabitur quis aliquam sem, a aliquam ante. "];
-
-    var selectionData = svg_dataText.selectAll("div")
-        .each(function (d) {
-            if (d.data.Id ===id) {
-                d3.select(this).raise().classed("summaryHover", true);
-                d3.select(this).raise().classed("summaryStandard", false);
-                //show additional data next column over
-                //select all current text elements and delete them
-                svg_dataDetailed.selectAll("div")
-                    .remove();
-                //create nee text elements in dom
-                svg_dataDetailed.selectAll("div")
-                    .data(myTestData)
-                    .enter()
-                    .append("div")
-                        .attr("text-anchor", "start")
-                        .html(myTestData);
-            }
-            else {
-                d3.select(this).raise().classed("summaryHover", false);
-                d3.select(this).raise().classed("summaryStandard", true);
-            }
-            
-    });
-   
+            });
 }
 
 //slider stuff
