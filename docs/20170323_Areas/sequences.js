@@ -127,21 +127,33 @@ d3.json("../Data/20170323_area.json", function (error, root) {
         //check areas designed are within 1% band (above or below) of area briefed
         if (onePercent<areaCheck && d.data.areaBriefed>d.data.areaDesigned) {
             //under required area outside 1% range
-        }else{
+            //check whether date is older than oldest date
+            if (areaCheck<=areaRangeUnderMin) {
+                areaRangeUnderMin = areaCheck;
+            }
+            if (areaCheck>=areaRangeUnderMax) {
+                areaRangeUnderMax =  areaCheck;
+            }
+        }else {
             if (onePercent<areaCheck && d.data.areaBriefed<d.data.areaDesigned) {
                 //over required area outside 1% range
-            }else   
-            {
+                if (areaCheck<=areaRangeOverMin) {
+                areaRangeOverMin = areaCheck;
+                }
+                if (areaCheck>=areaRangeOverMax) {
+                    areaRangeOverMax = areaCheck;
+                }
+            }else {
                 //inside briefed area range
+                if (areaCheck<=areaRangeMetMin) {
+                areaRangeMetMin = areaCheck;
+                }
+                if (areaCheck>=areaRangeMetMax) {
+                    areaRangeMetMax = areaCheck;
+                }
             }
         }
-        //check whether date is older than oldest date
-        if (parseDate(d.data.Date)<=dateRangeOldest) {
-            dateRangeOldest = parseDate(d.data.Date);
-        }
-        if (parseDate(d.data.Date)>=dateRangeNewest) {
-            dateRangeNewest =  parseDate(d.data.Date);
-        }
+        
         //console.log(parseDate(d.data.Date));
     });
 
@@ -153,7 +165,32 @@ d3.json("../Data/20170323_area.json", function (error, root) {
         .enter().append("path")
         .attr("d", arc)
         .attr("id", function (d) { return "_"+d.data.Id; })
-        .style("fill", function (d) { return color((d.children ? d : d.parent).data.name); })
+        .style("fill", function (d) { 
+            if (d.data.areaBriefed>0) {
+                //get the absolute value of briefed minus designed area
+                var areaCheck = Math.abs(d.data.areaBriefed-d.data.areaDesigned);
+                var onePercent = d.data.areaBriefed*0.01;
+                //check areas designed are within 1% band (above or below) of area briefed
+                if (onePercent<areaCheck && d.data.areaBriefed>d.data.areaDesigned) {
+                    //under required area outside 1% range
+                    return colorRed(areaCheck*100/areaRangeUnderMax);
+                }else 
+                {
+                    if (onePercent<areaCheck && d.data.areaBriefed<d.data.areaDesigned) 
+                    {
+                        //over required area outside 1% range
+                        return colorBlue(areaCheck*100/areaRangeOverMax);
+                    }else 
+                    {
+                        //inside briefed area range
+                        return colorGreen(areaCheck*100/areaRangeMetMax);
+                    }
+                }    
+            }else 
+            {
+                return colorNotBriefed;
+            }
+        })
         .on("click", onClick);
 
     //add data
@@ -217,21 +254,18 @@ function onClick(d) {
     var trail = svg_dataText.selectAll("div")
         .remove();
 
-    //create nee text elements in dom
+    //create new text elements in dom
     var selectionData = svg_dataText.selectAll("div")
         .data(sequenceArrayofData)
         .enter()
         .append("div")
             .attr("text-anchor", "start")
             .html(function (d) {
-                //reformat date
-                var dummy = parseDate(d.data.Date);
-                var otherLinks = d.data.OtherLinks.length === 0 ? "Other links: none" : "Other links: " + d.data.OtherLinks;
                 //build up new array with data
                 var myData = formatDate(dummy) + " : " +
+                    d.data.number + "<br>" +
                     d.data.name + "<br>" +
-                    d.data.description + "<br>" +
-                    otherLinks + "<br>" + "<br>";
+                    d.data.areaBriefed +" vs: "+ da.data.areaDesigned + "<br>" + "<br>";
                 return myData;
             });
 }
@@ -296,7 +330,7 @@ function dragDateSliderMove(d) {
 function iniSunBurstDateSlider()
 {
     //fix up sequence y-axis date scale
-    yScaleDateSlider.domain([dateRangeOldest, dateRangeNewest])
+    yScaleDateSlider.domain([areaRangeUnderMax*-1, areaRangeOverMax])
         .range([marginDateSlider, heightDateSlider - marginDateSlider]);   // map these to the date slider height = total height minus padding at both sides
 
     var line = sliderGroup.append("line")
