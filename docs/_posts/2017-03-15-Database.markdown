@@ -1,0 +1,48 @@
+---
+title:  "Database"
+date:   2017-03-15 08:00:00 +1100
+categories: dataViz
+tags:
+  - MySQL
+  - Database
+---
+
+# Working on the back end 
+
+## More Data
+
+I am now at a stage where I want to gather data from other projects in the studio. Whilst Excel is still an option its not great for varies reasons:
+
+* Clunky and boring
+* It does not support multiple users simultaneously adding data
+
+
+## MySQL
+
+To keep things simple I will start with the least amount of tables for now.
+
+![mySql](/blog/Images/2017-03-13MySQLstructure.png){:class="img-responsive"}{: height="200px" width="400px"}
+
+* Projects
+    * required to assign design events to a particular project
+
+* User
+    * required to assign a log entry to a user to allow for filtering of the main graph
+
+* DesignEvents
+    * this is basically the main table for now collecting all the data 
+    * ProjectID is a 'Foreign Key' in this table allowing to filter design events by project:
+    ```MySQL
+    SELECT  EventID, EventName, ... FROM  designevents WHERE 'Project ID'= x;
+    ```
+
+* DesignLogs
+   * this will record user and time spent against a particular design event once I have some front end ready...
+
+## MySQL environment
+
+To get the tables setup and initial data pushed into them I use MySQL [workbench](https://www.mysql.com/products/workbench/). This is an easy to use Graphical User Interface with a scripting shell build in.
+
+Using a script to set up the tables and user and to populate the database with data allows me to reinstate everything from scratch in a matter of seconds when working with MAMP. Might need to look into a dedicated [LAMP](https://aws.amazon.com/marketplace/pp/B0078UIFF2) server down the track.
+
+

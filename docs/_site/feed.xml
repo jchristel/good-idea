@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-26T14:54:26+11:00</updated><id>http://localhost:4000/</id><title type="html">Samples</title><subtitle>A page showing development progress.</subtitle><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><entry><title type="html">Writing…</title><link href="http://localhost:4000/communication/feedback/Blogging/" rel="alternate" type="text/html" title="Writing..." /><published>2017-03-21T19:00:00+11:00</published><updated>2017-03-21T19:00:00+11:00</updated><id>http://localhost:4000/communication/feedback/Blogging</id><content type="html" xml:base="http://localhost:4000/communication/feedback/Blogging/">&lt;h1 id=&quot;a-blog&quot;&gt;A Blog&lt;/h1&gt;
+
+&lt;p&gt;I’ve been toying with the idea of writing a blog for some time now but haven’t had the right motivation or means to get started.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/dataviz/welcome/&quot;&gt;This&lt;/a&gt; project offers me the right motivation because I do want to keep a log of my progress. 
+In addition the other day GitHub pages, a free service, was pointed out to me, which sorts out the means bit.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up&quot;&gt;Set up&lt;/h2&gt;
+
+&lt;p&gt;I created two repositories on GitHub. First one will host live pages showcasing the progress I’ve made so far. This is quite important to me since I realized that static images do not convey well the workings of a web site. Especially if that involves animated data driven by D3.&lt;/p&gt;
+
+&lt;p&gt;The second repository will host this blog. There is a great tutorial here on how to set this up next to the samples web site.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements&quot;&gt;Improvements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Show reel site
+    &lt;ul&gt;
+      &lt;li&gt;Create a landing page with links to the varies sample pages and this blog.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Blog
+    &lt;ul&gt;
+      &lt;li&gt;Download and install a jekyll theme to offer up some basic navigation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="jekyll" /><category term="github-pages" /><summary type="html">A Blog</summary></entry><entry><title type="html">Database to D3</title><link href="http://localhost:4000/dataviz/DatabaseConnection/" rel="alternate" type="text/html" title="Database to D3" /><published>2017-03-18T19:00:00+11:00</published><updated>2017-03-18T19:00:00+11:00</updated><id>http://localhost:4000/dataviz/DatabaseConnection</id><content type="html" xml:base="http://localhost:4000/dataviz/DatabaseConnection/">&lt;h1 id=&quot;connecting-things-up&quot;&gt;Connecting things up&lt;/h1&gt;
+
+&lt;h2 id=&quot;php-vs-javascript-vs-python&quot;&gt;PHP vs JavaScript vs Python&lt;/h2&gt;
+
+&lt;p&gt;There are, as always, a few ways to query a database back end pass the results back to D3 for visualization.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PHP
+    &lt;ul&gt;
+      &lt;li&gt;Seems to be the traditional way of doing things&lt;/li&gt;
+      &lt;li&gt;With PHP 5.5.0 the standard MySQL extensions where depreciated in favour of the new MySQLi
+        &lt;ul&gt;
+          &lt;li&gt;MAMP has support for either version of PHP&lt;/li&gt;
+          &lt;li&gt;A lot of the samples available however still reference &amp;lt; PHP 5.5.0&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;JavaScript
+    &lt;ul&gt;
+      &lt;li&gt;node.js appears to be a similar in capability and has the additional advantage of staying with the same language&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python
+    &lt;ul&gt;
+      &lt;li&gt;As capable as the other two. And that is as far as my research went.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;php-for-now&quot;&gt;PHP for now&lt;/h2&gt;
+
+&lt;p&gt;I’ve done some research into Python but it &lt;a href=&quot;http://blog.nlpapi.co/using-mamp-mysql-with-python/&quot;&gt;looks&lt;/a&gt; like it requires some tinkering to get going with MAMP.&lt;/p&gt;
+
+&lt;p&gt;To be honest I haven’t looked much into javascript at all at this point in time apart from some articles on the web comparing it to PHP.&lt;/p&gt;
+
+&lt;p&gt;I will stick to PHP since it is supported out of the box on MAMP. The &lt;a href=&quot;http://www.d3noob.org/2013/02/using-mysql-database-as-source-of-data.html&quot;&gt;sample&lt;/a&gt; I’ve found will work with &amp;lt; PHP 5.5.0. Once I got this going I will change over to follow this &lt;a href=&quot;https://www.binpress.com/tutorial/using-php-with-mysql-the-right-way/17&quot;&gt;tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;oh-ok-utf-8-encoding&quot;&gt;Oh ok UTF-8 encoding&lt;/h2&gt;
+
+&lt;p&gt;Looks like the data I pushed into excel does not adhere to UTF-8 encoding which in turn created havoc once the data got to D3. Luckily I could use NotePad ++ to show any non UTF-8 characters in my sample data. 
+It looks like there are at least two more ways to enforce UTF-8 encoding:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;MySQL can &lt;a href=&quot;http://stackoverflow.com/questions/202205/how-to-make-mysql-handle-utf-8-properly&quot;&gt;enforce&lt;/a&gt; UTF-8 encoding&lt;/li&gt;
+  &lt;li&gt;PHP can also do the trick:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$json = json_encode(utf8_encode($nestedArray));&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$json = utf8_encode(json_encode($nestedArray));&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hm I wonder whether the order matters?&lt;/p&gt;
+
+&lt;h2 id=&quot;rebuilding-the-required-nested-json-structure&quot;&gt;Rebuilding the required nested JSON structure&lt;/h2&gt;
+
+&lt;p&gt;The PHP sample mentioned above returns all entries in my database row by row in JSON format. Nice but not quite what I’m &lt;a href=&quot;/dataviz/DataFormat/&quot;&gt;after&lt;/a&gt;. &lt;a href=&quot;https://www.sitepoint.com/community/t/unexpected-end-of-json-input-error-in-php/254313&quot;&gt;Here&lt;/a&gt; is another PHP sample which takes that data and nests it. However that nesting does not look quite right. Children are not within an array marked by &lt;code class=&quot;highlighter-rouge&quot;&gt;[{}]&lt;/code&gt; instead just &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;.  Lets see how I go…&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="javascript" /><category term="PHP" /><category term="Python" /><category term="MySQL" /><category term="JSON" /><category term="UTF-8" /><summary type="html">Connecting things up</summary></entry><entry><title type="html">Database</title><link href="http://localhost:4000/dataviz/Database/" rel="alternate" type="text/html" title="Database" /><published>2017-03-15T08:00:00+11:00</published><updated>2017-03-15T08:00:00+11:00</updated><id>http://localhost:4000/dataviz/Database</id><content type="html" xml:base="http://localhost:4000/dataviz/Database/">&lt;h1 id=&quot;working-on-the-back-end&quot;&gt;Working on the back end&lt;/h1&gt;
+
+&lt;h2 id=&quot;more-data&quot;&gt;More Data&lt;/h2&gt;
+
+&lt;p&gt;I am now at a stage where I want to gather data from other projects in the studio. Whilst Excel is still an option its not great for varies reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clunky and boring&lt;/li&gt;
+  &lt;li&gt;It does not support multiple users simultaneously adding data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mysql&quot;&gt;MySQL&lt;/h2&gt;
+
+&lt;p&gt;To keep things simple I will start with the least amount of tables for now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/Images/2017-03-13MySQLstructure.png&quot; alt=&quot;mySql&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;400px&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Projects
+    &lt;ul&gt;
+      &lt;li&gt;required to assign design events to a particular project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;User
+    &lt;ul&gt;
+      &lt;li&gt;required to assign a log entry to a user to allow for filtering of the main graph&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DesignEvents
+    &lt;ul&gt;
+      &lt;li&gt;this is basically the main table for now collecting all the data&lt;/li&gt;
+      &lt;li&gt;ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:
+        &lt;pre&gt;&lt;code class=&quot;language-MySQL&quot;&gt;  SELECT  EventID, EventName, ... FROM  designevents WHERE 'Project ID'= x;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DesignLogs
+    &lt;ul&gt;
+      &lt;li&gt;this will record user and time spent against a particular design event once I have some front end ready…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mysql-environment&quot;&gt;MySQL environment&lt;/h2&gt;
+
+&lt;p&gt;To get the tables setup and initial data pushed into them I use MySQL &lt;a href=&quot;https://www.mysql.com/products/workbench/&quot;&gt;workbench&lt;/a&gt;. This is an easy to use Graphical User Interface with a scripting shell build in.&lt;/p&gt;
+
+&lt;p&gt;Using a script to set up the tables and user and to populate the database with data allows me to reinstate everything from scratch in a matter of seconds when working with MAMP. Might need to look into a dedicated &lt;a href=&quot;https://aws.amazon.com/marketplace/pp/B0078UIFF2&quot;&gt;LAMP&lt;/a&gt; server down the track.&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="MySQL" /><category term="Database" /><summary type="html">Working on the back end</summary></entry><entry><title type="html">Layout - What can I do</title><link href="http://localhost:4000/dataviz/WebSiteLayoutOptions/" rel="alternate" type="text/html" title="Layout - What can I do" /><published>2017-02-25T20:00:00+11:00</published><updated>2017-02-25T20:00:00+11:00</updated><id>http://localhost:4000/dataviz/WebSiteLayoutOptions</id><content type="html" xml:base="http://localhost:4000/dataviz/WebSiteLayoutOptions/">&lt;h1 id=&quot;website-layout&quot;&gt;Website Layout&lt;/h1&gt;
+
+&lt;h2 id=&quot;easy-stuff&quot;&gt;Easy stuff&lt;/h2&gt;
+
+&lt;p&gt;In my previous &lt;a href=&quot;/dataviz/WebSiteLayout/&quot;&gt;post&lt;/a&gt; I listed what I would like to show on the web site.&lt;/p&gt;
+
+&lt;p&gt;I can implement that fairly easily through a 3 column layout. This &lt;a href=&quot;http://matthewjamestaylor.com/blog/perfect-3-column.htm&quot;&gt;one&lt;/a&gt; looks promising. I will just need to work out how to change the width of the columns to suit my needs.&lt;/p&gt;
+
+&lt;p&gt;Column one would be the graph area. Meanwhile column two and three are data areas.&lt;/p&gt;
+
+&lt;p&gt;This is ok for now but is not very flexible in terms of being able to re-arrange item to suit a particular users preferences.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hard-unknown-stuff&quot;&gt;The hard (unknown) stuff&lt;/h2&gt;
+
+&lt;p&gt;Widgets I think might be a much more flexible approach then a fixed layout altogether.&lt;/p&gt;
+
+&lt;h2 id=&quot;for-now&quot;&gt;For now&lt;/h2&gt;
+
+&lt;p&gt;I will stick to a fixed three column layout for the moment simply because it is fairly easy to implement and will suffice to convey the intent. If things go really, really well then I can revisit this item.&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="HTML" /><category term="UI Design" /><category term="Widgets" /><summary type="html">Website Layout</summary></entry><entry><title type="html">Layout - What do I want</title><link href="http://localhost:4000/dataviz/WebSiteLayout/" rel="alternate" type="text/html" title="Layout - What do I want" /><published>2017-02-20T19:00:00+11:00</published><updated>2017-02-20T19:00:00+11:00</updated><id>http://localhost:4000/dataviz/WebSiteLayout</id><content type="html" xml:base="http://localhost:4000/dataviz/WebSiteLayout/">&lt;h1 id=&quot;website-layout&quot;&gt;Website Layout&lt;/h1&gt;
+
+&lt;h2 id=&quot;what-do-i-want-to-show&quot;&gt;What Do I want to show?&lt;/h2&gt;
+
+&lt;h3 id=&quot;graphs&quot;&gt;Graphs&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A graph area consisting of
+    &lt;ul&gt;
+      &lt;li&gt;The main graph&lt;/li&gt;
+      &lt;li&gt;A time liner (above the main graph)&lt;/li&gt;
+      &lt;li&gt;A range slider to clamp the main graph by date&lt;/li&gt;
+      &lt;li&gt;A way to filter events by people involved&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A choice to resize the graph either by number of events or size (time / cost) of events&lt;/li&gt;
+  &lt;li&gt;A way to find a particular element via text input (hopefully smarter then by exact match…)&lt;/li&gt;
+  &lt;li&gt;Maybe I want to be able to change type of graphs or display more than one graph&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;data-trail&quot;&gt;Data Trail&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A secondary area listing all events, in summary form, leading to the currently selected event
+    &lt;ul&gt;
+      &lt;li&gt;Ideally there is a way of searching / filtering this trail&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;detailed-data&quot;&gt;Detailed Data&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A tertiary area where further items relating to the current event are listed.&lt;/li&gt;
+  &lt;li&gt;Items can be
+    &lt;ul&gt;
+      &lt;li&gt;Email&lt;/li&gt;
+      &lt;li&gt;Pdf’s (meeting minutes, drawings, specifications)&lt;/li&gt;
+      &lt;li&gt;Images, maybe screen shots of a particular location in the model(?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="data" /><category term="UI design" /><summary type="html">Website Layout</summary></entry><entry><title type="html">Sunburst Diagram</title><link href="http://localhost:4000/dataviz/Sunburst/" rel="alternate" type="text/html" title="Sunburst Diagram" /><published>2017-02-15T14:00:00+11:00</published><updated>2017-02-15T14:00:00+11:00</updated><id>http://localhost:4000/dataviz/Sunburst</id><content type="html" xml:base="http://localhost:4000/dataviz/Sunburst/">&lt;h1 id=&quot;sunburst&quot;&gt;Sunburst&lt;/h1&gt;
+
+&lt;h2 id=&quot;starting-point&quot;&gt;Starting point&lt;/h2&gt;
+
+&lt;p&gt;I started of with a combination of two samples:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mlvl.github.io/Hierarchie/#/&quot;&gt;First&lt;/a&gt; because I liked the option to drill down into the data by ‘zooming’ into the graph. In addition it has a legend which shows the entire path from the start to the element one hovers over.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bl.ocks.org/mbostock/4063423&quot;&gt;Second&lt;/a&gt; because it provided an option to resize the diagram depending on size of entry. (Think of size as time or cost value.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;where-from-here&quot;&gt;Where from here?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The one drawback of the sunburst diagram is that it does not (at least in the moment) reflect a timeline. Events are just stacked hierarchical. Unfortunately that means that events on the same ring do not necessarily ocurred at the same time. One way to show a time line is by amending the bread crumb trail to reflect the date along the X-Axis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Another feature, which would be handy, is to clamp the events displayed by a date range or in other words just show me what happened in between two dates. I could do that via some date picker boxes or, better even, with a range slider.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Last but not least I want to display more information on an event once the user selects it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="javascript" /><category term="D3" /><category term="Sunburst" /><summary type="html">Sunburst</summary></entry><entry><title type="html">Platform and Data</title><link href="http://localhost:4000/dataviz/PlatformAndData/" rel="alternate" type="text/html" title="Platform and Data" /><published>2017-02-10T08:00:00+11:00</published><updated>2017-02-10T08:00:00+11:00</updated><id>http://localhost:4000/dataviz/PlatformAndData</id><content type="html" xml:base="http://localhost:4000/dataviz/PlatformAndData/">&lt;h1 id=&quot;so-far&quot;&gt;So Far&lt;/h1&gt;
+
+&lt;p&gt;I want to create a proof of concept application which allows project team members to quickly find reasons as to why we choose a certain solution over another.
+This application is meant to be visually appealing, easily accessible in terms of platform (desktop, phone …) and intuitive to use.&lt;/p&gt;
+
+&lt;h2 id=&quot;platform&quot;&gt;Platform&lt;/h2&gt;
+
+&lt;p&gt;In the moment I have settled for &lt;a href=&quot;https://d3js.org&quot;&gt;D3&lt;/a&gt; for visualization. Reasons being:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It’s web based or more precisely it is a javascript library&lt;/li&gt;
+  &lt;li&gt;it offers a wide range of &lt;a href=&quot;https://github.com/d3/d3/wiki/Gallery&quot;&gt;graphs&lt;/a&gt; and tools to create graphs easily from data&lt;/li&gt;
+  &lt;li&gt;Development is still active but (maybe?) not as active as &lt;a href=&quot;https://processing.org&quot;&gt;processing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Why not &lt;a href=&quot;https://groups.google.com/forum/#!topic/d3-js/KjGW94SyrAg&quot;&gt;processing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In order to build javascript code and test it I needed a webserver. &lt;a href=&quot;https://www.mamp.info/en/&quot;&gt;MAMP&lt;/a&gt; is great since it creates a local webserver on my citrix instance which also happens to have MySQL support.&lt;/p&gt;
+
+&lt;p&gt;Back end database: MySQL. I know it (a little) and MAMP has got a MySQL server build in.&lt;/p&gt;
+
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+&lt;p&gt;To start of I needed some data, preferable relating to a project rather then complete random stuff. The CAD/Out folder of one of the projects I am working on was an ideal source.&lt;/p&gt;
+
+&lt;h3 id=&quot;data-structure&quot;&gt;Data Structure&lt;/h3&gt;
+&lt;p&gt;Since I am trying to visualize design events/ decisions the following applies:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decisions follow on from other decisions (parent &amp;lt;-&amp;gt; child relation ship)&lt;/li&gt;
+  &lt;li&gt;One decision (parent) can influence multiple other decisions which are not necessarily a direct child. Ouch. Or in an example a change in building height (parent) will influence number of lifts (child) which will influence the core design (some distant relative). The core design is however also influenced by services (black sheep of the family)…&lt;/li&gt;
+  &lt;li&gt;Decision are made at a point in time&lt;/li&gt;
+  &lt;li&gt;Decisions are made by somebody or a group of people&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;data-recording&quot;&gt;Data Recording&lt;/h3&gt;
+&lt;p&gt;In the moment I’m using MS Excel to record very basic data points in a format like so:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;ID&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Name&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Parent ID&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Date&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;other Links&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Sydney Project&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Sydney very High high rise…&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12/10/2016&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Structure&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;base concept&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;15/10/2016&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Facade&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;opaque&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;17/10/2016&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Not great but it gives me what I am after for the moment.&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="javascript" /><category term="D3" /><category term="Excel" /><category term="Data Structure" /><summary type="html">So Far</summary></entry><entry><title type="html">Data format</title><link href="http://localhost:4000/dataviz/DataFormat/" rel="alternate" type="text/html" title="Data format" /><published>2017-02-07T13:30:00+11:00</published><updated>2017-02-07T13:30:00+11:00</updated><id>http://localhost:4000/dataviz/DataFormat</id><content type="html" xml:base="http://localhost:4000/dataviz/DataFormat/">&lt;h1 id=&quot;json&quot;&gt;JSON&lt;/h1&gt;
+
+&lt;p&gt;Many of the samples showcased on the D3 Gallery page are using a JSON file as the data source. The idea behind that is that the JSON file defines the properties and dependencies of each of the data points. This in turn makes it a lot easier for D3 to convert that already structured data into a nice looking diagram. In my case, the data structure the diagram required looked like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;flare&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;children&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;analytics&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;children&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cluster&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;children&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AgglomerativeCluster&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3938&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;CommunityStructure&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3812&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;HierarchicalCluster&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6714&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MergeEdge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;743&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jsoneditoronline.org&quot;&gt;This&lt;/a&gt; is a handy online JSON editor.&lt;/p&gt;
+
+&lt;p&gt;Once I knew what structure and properties the JSON file was meant to have to work with the sample file I picked, I could go ahead and create a script which converts my Excel file into the required JSON structure.&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="JSON" /><summary type="html">JSON</summary></entry><entry><title type="html">Choice of Diagram(s)</title><link href="http://localhost:4000/dataviz/WhichDiagram/" rel="alternate" type="text/html" title="Choice of Diagram(s)" /><published>2017-02-06T09:00:00+11:00</published><updated>2017-02-06T09:00:00+11:00</updated><id>http://localhost:4000/dataviz/WhichDiagram</id><content type="html" xml:base="http://localhost:4000/dataviz/WhichDiagram/">&lt;h1 id=&quot;so-many-diagrams&quot;&gt;So many Diagrams&lt;/h1&gt;
+
+&lt;p&gt;Looking at the D3 sample page I narrowed down the choice of diagrams to start with to 2: Tree View and Sunburst.&lt;/p&gt;
+
+&lt;h2 id=&quot;tree-view&quot;&gt;Tree View&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/tree.png&quot; alt=&quot;tree&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Whilst this diagram initially looked like the obvious choice because of its very clear hierarchical structure it has some short comings:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Large amount of data will make this diagram look very messy very quickly and requires a lot of screen real estate to display.&lt;/li&gt;
+  &lt;li&gt;Not sure how to display secondary relations on top of this diagram&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sunburst&quot;&gt;SunBurst&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/SunBurst.png&quot; alt=&quot;sun&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This diagram takes a moment to get used to since relationships are not that obvious. However:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It can display large amount of data in a very compact form&lt;/li&gt;
+  &lt;li&gt;Secondary relation ships might be easier to show&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="javascript" /><category term="D3" /><category term="Sunburst" /><category term="Tree View" /><summary type="html">So many Diagrams</summary></entry><entry><title type="html">D3</title><link href="http://localhost:4000/dataviz/D3/" rel="alternate" type="text/html" title="D3" /><published>2017-02-05T13:00:00+11:00</published><updated>2017-02-05T13:00:00+11:00</updated><id>http://localhost:4000/dataviz/D3</id><content type="html" xml:base="http://localhost:4000/dataviz/D3/">&lt;h1 id=&quot;tutorials&quot;&gt;Tutorials&lt;/h1&gt;
+
+&lt;p&gt;I’m just amazed how many tutorials are on the internet pretty much covering everything. Which is invaluable to me since I am new to javascript and D3.&lt;/p&gt;
+
+&lt;h2 id=&quot;d3-tutorials&quot;&gt;D3 tutorials&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alignedleft.com/tutorials/d3/&quot;&gt;nice start&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;loads of youtube tuts out there too&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;help&quot;&gt;help!&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stack overflow: &lt;a href=&quot;http://stackoverflow.com&quot;&gt;SO&lt;/a&gt; Couldnt live without it!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;old-vs-new&quot;&gt;Old vs New&lt;/h2&gt;
+
+&lt;p&gt;The first problem I came across when re-using samples is D3 versioning. Some samples I planned to borrow from used version 4 meanwhile, the majority of samples, used the older version 3.&lt;/p&gt;
+
+&lt;p&gt;To find out which version of D3 is being used check the header of the .html file:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;version 3
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//d3js.org/d3.v3.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;version 4
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//d3js.org/d3.v4.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;.min&lt;/code&gt; stand for a compacted version which is faster to load.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately for somebody who is new to javascript (me) this is a bit of a problem. Some of the issues I could solve by looking &lt;a href=&quot;https://github.com/d3/d3/blob/master/CHANGES.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the end I decided to stick to the newer version 4.&lt;/p&gt;</content><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><category term="javascript" /><category term="D3" /><summary type="html">Tutorials</summary></entry></feed>

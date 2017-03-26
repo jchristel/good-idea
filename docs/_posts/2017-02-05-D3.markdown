@@ -1,0 +1,40 @@
+---
+title:  "D3"
+date:   2017-02-05 13:00:00 +1100
+categories: dataViz
+tags:
+  - javascript
+  - D3
+---
+
+# Tutorials
+
+I'm just amazed how many tutorials are on the internet pretty much covering everything. Which is invaluable to me since I am new to javascript and D3.
+
+## D3 tutorials
+* [nice start](http://alignedleft.com/tutorials/d3/) 
+* loads of youtube tuts out there too
+
+## help!
+* Stack overflow: [SO](http://stackoverflow.com) Couldnt live without it!
+
+## Old vs New
+
+The first problem I came across when re-using samples is D3 versioning. Some samples I planned to borrow from used version 4 meanwhile, the majority of samples, used the older version 3. 
+
+To find out which version of D3 is being used check the header of the .html file:
+* version 3
+```html
+<script src="//d3js.org/d3.v3.min.js"></script>
+```
+
+* version 4
+```html
+<script src="//d3js.org/d3.v4.min.js"></script>
+```
+
+The `.min` stand for a compacted version which is faster to load.
+
+Unfortunately for somebody who is new to javascript (me) this is a bit of a problem. Some of the issues I could solve by looking [here](https://github.com/d3/d3/blob/master/CHANGES.md). 
+
+At the end I decided to stick to the newer version 4.

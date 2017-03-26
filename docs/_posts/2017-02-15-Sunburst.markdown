@@ -1,0 +1,24 @@
+---
+title:  "Sunburst Diagram"
+date:   2017-02-15 14:00:00 +1100
+categories: dataViz
+tags:
+  - javascript
+  - D3
+  - Sunburst
+---
+
+# Sunburst
+
+## Starting point
+
+I started of with a combination of two samples: 
+* [First](http://mlvl.github.io/Hierarchie/#/) because I liked the option to drill down into the data by 'zooming' into the graph. In addition it has a legend which shows the entire path from the start to the element one hovers over.
+* [Second](https://bl.ocks.org/mbostock/4063423) because it provided an option to resize the diagram depending on size of entry. (Think of size as time or cost value.)
+
+## Where from here?
+* The one drawback of the sunburst diagram is that it does not (at least in the moment) reflect a timeline. Events are just stacked hierarchical. Unfortunately that means that events on the same ring do not necessarily ocurred at the same time. One way to show a time line is by amending the bread crumb trail to reflect the date along the X-Axis.
+
+* Another feature, which would be handy, is to clamp the events displayed by a date range or in other words just show me what happened in between two dates. I could do that via some date picker boxes or, better even, with a range slider.
+
+* Last but not least I want to display more information on an event once the user selects it.

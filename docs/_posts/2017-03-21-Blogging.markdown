@@ -1,0 +1,30 @@
+---
+title:  "Writing..."
+date:   2017-03-21 19:00:00 +1100
+categories: communication feedback
+tags:
+  - jekyll
+  - github-pages
+---
+
+# A Blog 
+
+I've been toying with the idea of writing a blog for some time now but haven't had the right motivation or means to get started.
+
+[This]({{ site.baseurl }}{% post_url 2017-02-01-welcome %}) project offers me the right motivation because I do want to keep a log of my progress. 
+In addition the other day GitHub pages, a free service, was pointed out to me, which sorts out the means bit.
+
+## Set up
+
+I created two repositories on GitHub. First one will host live pages showcasing the progress I've made so far. This is quite important to me since I realized that static images do not convey well the workings of a web site. Especially if that involves animated data driven by D3.
+
+The second repository will host this blog. There is a great tutorial here on how to set this up next to the samples web site.
+
+## Improvements
+
+* Show reel site
+    * Create a landing page with links to the varies sample pages and this blog.
+
+
+* Blog
+    * Download and install a jekyll theme to offer up some basic navigation
