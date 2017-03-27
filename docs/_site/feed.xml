@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T17:50:28+11:00</updated><id>http://localhost:4000/</id><title type="html">Samples</title><subtitle>A page showing development progress.</subtitle><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><entry><title type="html">Writing…</title><link href="http://localhost:4000/communication/feedback/Blogging/" rel="alternate" type="text/html" title="Writing..." /><published>2017-03-21T19:00:00+11:00</published><updated>2017-03-21T19:00:00+11:00</updated><id>http://localhost:4000/communication/feedback/Blogging</id><content type="html" xml:base="http://localhost:4000/communication/feedback/Blogging/">&lt;h1 id=&quot;a-blog&quot;&gt;A Blog&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T20:37:33+11:00</updated><id>http://localhost:4000/</id><title type="html">Samples</title><subtitle>A page showing development progress.</subtitle><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><entry><title type="html">Writing…</title><link href="http://localhost:4000/communication/feedback/Blogging/" rel="alternate" type="text/html" title="Writing..." /><published>2017-03-21T19:00:00+11:00</published><updated>2017-03-21T19:00:00+11:00</updated><id>http://localhost:4000/communication/feedback/Blogging</id><content type="html" xml:base="http://localhost:4000/communication/feedback/Blogging/">&lt;h1 id=&quot;a-blog&quot;&gt;A Blog&lt;/h1&gt;
 
 &lt;p&gt;I’ve been toying with the idea of writing a blog for some time now but haven’t had the right motivation or means to get started.&lt;/p&gt;
 
@@ -309,7 +309,7 @@ This application is meant to be visually appealing, easily accessible in terms o
 &lt;p&gt;Looking at the D3 sample page I narrowed down the choice of diagrams to start with to 2: Tree View and Sunburst.&lt;/p&gt;
 
 &lt;h2 id=&quot;tree-view&quot;&gt;Tree View&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/tree.png&quot; alt=&quot;tree&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/tree.png&quot; alt=&quot;tree&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Whilst this diagram initially looked like the obvious choice because of its very clear hierarchical structure it has some short comings:&lt;/p&gt;
 &lt;ul&gt;
@@ -318,9 +318,9 @@ This application is meant to be visually appealing, easily accessible in terms o
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;sunburst&quot;&gt;SunBurst&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/SunBurst.png&quot; alt=&quot;sun&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/SunBurst.svg&quot; alt=&quot;sun&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This diagram takes a moment to get used to since relationships are not that obvious. However:&lt;/p&gt;
+&lt;p&gt;This diagram takes a moment to get used to, since relationships are not that obvious at the first glance. However:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;It can display large amount of data in a very compact form&lt;/li&gt;
   &lt;li&gt;Secondary relation ships might be easier to show&lt;/li&gt;
