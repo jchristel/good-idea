@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T20:37:33+11:00</updated><id>http://localhost:4000/</id><title type="html">Samples</title><subtitle>A page showing development progress.</subtitle><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><entry><title type="html">Writing…</title><link href="http://localhost:4000/communication/feedback/Blogging/" rel="alternate" type="text/html" title="Writing..." /><published>2017-03-21T19:00:00+11:00</published><updated>2017-03-21T19:00:00+11:00</updated><id>http://localhost:4000/communication/feedback/Blogging</id><content type="html" xml:base="http://localhost:4000/communication/feedback/Blogging/">&lt;h1 id=&quot;a-blog&quot;&gt;A Blog&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T21:38:51+11:00</updated><id>http://localhost:4000/</id><title type="html">Samples</title><subtitle>A page showing development progress.</subtitle><author><name>Jan Christel</name><email>jan.r.christel@gmail.com</email></author><entry><title type="html">Writing…</title><link href="http://localhost:4000/communication/feedback/Blogging/" rel="alternate" type="text/html" title="Writing..." /><published>2017-03-21T19:00:00+11:00</published><updated>2017-03-21T19:00:00+11:00</updated><id>http://localhost:4000/communication/feedback/Blogging</id><content type="html" xml:base="http://localhost:4000/communication/feedback/Blogging/">&lt;h1 id=&quot;a-blog&quot;&gt;A Blog&lt;/h1&gt;
 
 &lt;p&gt;I’ve been toying with the idea of writing a blog for some time now but haven’t had the right motivation or means to get started.&lt;/p&gt;
 
@@ -94,7 +94,7 @@ It looks like there are at least two more ways to enforce UTF-8 encoding:&lt;/p&
 
 &lt;p&gt;To keep things simple I will start with the least amount of tables for now.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/Images/2017-03-13MySQLstructure.png&quot; alt=&quot;mySql&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;400px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2017-03-13MySQLstructure.png&quot; alt=&quot;mySql&quot; class=&quot;img-responsive&quot; height=&quot;200px&quot; width=&quot;400px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Projects
@@ -110,11 +110,12 @@ It looks like there are at least two more ways to enforce UTF-8 encoding:&lt;/p&
   &lt;li&gt;DesignEvents
     &lt;ul&gt;
       &lt;li&gt;this is basically the main table for now collecting all the data&lt;/li&gt;
-      &lt;li&gt;ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:
-        &lt;pre&gt;&lt;code class=&quot;language-MySQL&quot;&gt;  SELECT  EventID, EventName, ... FROM  designevents WHERE 'Project ID'= x;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/li&gt;
+      &lt;li&gt;ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:&lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;EventID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;designevents&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Project&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;DesignLogs
     &lt;ul&gt;

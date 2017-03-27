@@ -328,7 +328,7 @@
 
 <p>To keep things simple I will start with the least amount of tables for now.</p>
 
-<p><img src="/blog/Images/2017-03-13MySQLstructure.png" alt="mySql" class="img-responsive" height="200px" width="400px" /></p>
+<p><img src="/assets/images/posts/2017-03-13MySQLstructure.png" alt="mySql" class="img-responsive" height="200px" width="400px" /></p>
 
 <ul>
   <li>Projects
@@ -344,11 +344,12 @@
   <li>DesignEvents
     <ul>
       <li>this is basically the main table for now collecting all the data</li>
-      <li>ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:
-        <pre><code class="language-MySQL">  SELECT  EventID, EventName, ... FROM  designevents WHERE 'Project ID'= x;
-</code></pre>
-      </li>
+      <li>ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:</li>
     </ul>
+
+    <div class="language-sql highlighter-rouge"><pre class="highlight"><code>  <span class="k">SELECT</span>  <span class="n">EventID</span><span class="p">,</span> <span class="n">EventName</span><span class="p">,</span> <span class="p">...</span> <span class="k">FROM</span>  <span class="n">designevents</span> <span class="k">WHERE</span> <span class="n">Project</span> <span class="n">ID</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+</code></pre>
+    </div>
   </li>
   <li>DesignLogs
     <ul>

@@ -21,7 +21,7 @@ I am now at a stage where I want to gather data from other projects in the studi
 
 To keep things simple I will start with the least amount of tables for now.
 
-![mySql](/blog/Images/2017-03-13MySQLstructure.png){:class="img-responsive"}{: height="200px" width="400px"}
+![mySql](/assets/images/posts/2017-03-13MySQLstructure.png){:class="img-responsive"}{: height="200px" width="400px"}
 
 * Projects
     * required to assign design events to a particular project
@@ -32,8 +32,9 @@ To keep things simple I will start with the least amount of tables for now.
 * DesignEvents
     * this is basically the main table for now collecting all the data 
     * ProjectID is a 'Foreign Key' in this table allowing to filter design events by project:
-    ```MySQL
-    SELECT  EventID, EventName, ... FROM  designevents WHERE 'Project ID'= x;
+
+    ```sql
+    SELECT  EventID, EventName, ... FROM  designevents WHERE Project ID = x;
     ```
 
 * DesignLogs
