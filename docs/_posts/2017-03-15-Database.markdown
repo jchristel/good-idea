@@ -34,7 +34,8 @@ To keep things simple I will start with the least amount of tables for now.
     * ProjectID is a 'Foreign Key' in this table allowing to filter design events by project:
 
     ```sql
-    SELECT  EventID, EventName, ... FROM  designevents WHERE Project ID = x;
+    SELECT  EventID, EventName, ... FROM  designevents 
+    WHERE Project ID = x;
     ```
 
 * DesignLogs

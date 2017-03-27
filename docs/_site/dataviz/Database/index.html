@@ -239,6 +239,12 @@
       
 
       
+        <li>
+          <a href="https://www.linkedin.com/in/jan-christel-868a0621" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
 
       
 
@@ -347,7 +353,8 @@
       <li>ProjectID is a ‘Foreign Key’ in this table allowing to filter design events by project:</li>
     </ul>
 
-    <div class="language-sql highlighter-rouge"><pre class="highlight"><code>  <span class="k">SELECT</span>  <span class="n">EventID</span><span class="p">,</span> <span class="n">EventName</span><span class="p">,</span> <span class="p">...</span> <span class="k">FROM</span>  <span class="n">designevents</span> <span class="k">WHERE</span> <span class="n">Project</span> <span class="n">ID</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+    <div class="language-sql highlighter-rouge"><pre class="highlight"><code>  <span class="k">SELECT</span>  <span class="n">EventID</span><span class="p">,</span> <span class="n">EventName</span><span class="p">,</span> <span class="p">...</span> <span class="k">FROM</span>  <span class="n">designevents</span> 
+  <span class="k">WHERE</span> <span class="n">Project</span> <span class="n">ID</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
 </code></pre>
     </div>
   </li>
