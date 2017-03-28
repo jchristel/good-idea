@@ -95,7 +95,7 @@ var svg_dataDetailed = d3.select("body").select("div.col3");
 //------------------------------------------------------------------ entry 
 
 //method creating the sunburst diagram
-d3.json("flare_2.json", function (error, root) {
+d3.json("20170201_Sunburst/flare_2.json", function (error, root) {
     if (error) throw error;
 
     //setting up data for sunburst diagram
