@@ -1,10 +1,13 @@
-var widthOverall = 900;
+var widthOverall = document.getElementById("sunburst_svg").offsetWidth;
+
 var heightOverall = 900;
 
-var widthGraphics = widthOverall / 3 *2,
+var widthGraphics = widthOverall / 3,
     heightGraphics = 700,
     radius = (Math.min(widthGraphics, heightGraphics) / 2) - 10;
 
+console.log(widthGraphics);
+console.log(radius);
 var widthSequence = widthOverall,
     heightSequence = heightOverall/4,
     paddingSequence = 100;
@@ -85,7 +88,7 @@ var svg = d3.select("body").select("div.chart").append("svg")
     .attr("height", heightGraphics)
     .attr("id", "sunburstGraphicMain")
   .append("g")
-    .attr("transform", "translate(" + widthGraphics / 2 + "," + (heightGraphics / 2) + ")");
+    .attr("transform", "translate(" + (widthGraphics / 2)+widthDateSlider +10+ "," + (heightGraphics / 2) + ")");
  
 //---------------------- data
 //global variable containing svg for additional data
