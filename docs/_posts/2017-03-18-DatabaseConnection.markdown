@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Database to D3"
 date:   2017-03-18 19:00:00 +1100
 categories: dataViz

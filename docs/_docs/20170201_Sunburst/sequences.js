@@ -82,13 +82,14 @@ var sliderGroup = svgDateSlider.append("g")
     .attr("class", "slider");
 
 //---------------------- sun burst
+var translateSVG = (widthGraphics / 2)+widthDateSlider +10;
 //global variable containing svg for sunburst diagram
 var svg = d3.select("body").select("div.chart").append("svg")
     .attr("width", widthGraphics)
     .attr("height", heightGraphics)
     .attr("id", "sunburstGraphicMain")
   .append("g")
-    .attr("transform", "translate(" + (widthGraphics / 2)+widthDateSlider +10+ "," + (heightGraphics / 2) + ")");
+    .attr("transform", "translate(" + translateSVG + "," + (heightGraphics / 2) + ")");
  
 //---------------------- data
 //global variable containing svg for additional data

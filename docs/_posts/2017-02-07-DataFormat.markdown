@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Data format"
 date:   2017-02-07 13:30:00 +1100
 categories: dataViz

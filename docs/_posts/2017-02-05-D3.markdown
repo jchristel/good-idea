@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "D3"
 date:   2017-02-05 13:00:00 +1100
 categories: dataViz

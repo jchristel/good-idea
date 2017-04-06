@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Documenting the design decision process or A good idea at the time.."
 description: This is our first post. Hello World!
 header: Hello World

@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Platform and Data"
 date:   2017-02-10 08:00:00 +1100
 categories: dataViz

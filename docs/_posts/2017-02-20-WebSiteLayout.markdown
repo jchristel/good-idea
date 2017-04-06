@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Layout - What do I want"
 date:   2017-02-20 19:00:00 +1100
 categories: dataViz

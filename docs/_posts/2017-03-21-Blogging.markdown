@@ -1,7 +1,8 @@
 ---
+layout: post
 title:  "Writing..."
 date:   2017-03-21 19:00:00 +1100
-categories: communication feedback
+categories: dataviz
 tags:
   - jekyll
   - github-pages

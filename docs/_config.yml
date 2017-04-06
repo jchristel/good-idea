@@ -1,277 +1,78 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site Settings
-locale                   : "en-US"
-title                    : "Samples"
-title_separator          : "-"
-name                     : &name "Jan Christel" # &name is a YAML anchor which can be *referenced later
-description              : &description "A page showing development progress."
-url                      : "https://jchristel.github.io" # the base hostname & protocol for your site
-baseurl                  : "/good-idea" # the subpath of your site, e.g. "/blog"
-repository               : "good-idea"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  path                   : # blank (default) uses feed.xml
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "From A to B"
+email: jan.r.christel@gmail.com
+name: &name "Jan Christel" # &name is a YAML anchor which can be *referenced later
+description: &description "This is an attempt in finding an easy and visualy appealing way of documenting the project design process."
+url: "https://jchristel.github.io"
+baseurl: "/good-idea" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# SEO Related
-google_site_verification :  # Replace this with your ID, or delete
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+twitter_username: &twitter jan_christel
+github_username:  jchristel
+linkedin_username: "jan-christel-868a0621"
 
-# Social Sharing
-twitter:
-  username               : &twitter "jan_christel"
-facebook:
-  username               : 
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles, used in _includes/seo.html
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-    - "https://twitter.com/jchristel"
-
-# Analytics
-analytics:
-  provider               : #"google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : # Replace this with your ID, or delete
-
-
-# Site Author
-author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/avatar.png"
-  bio              : "Just me."
-  location         : "Sydney, Australia"
-  email            : "jan.r.christel@gmail.com"
-  uri              : 
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : 
-  foursquare       :
-  github           : 
-  google_plus      :
-  keybase          :
-  instagram        : 
-  lastfm           :
-  linkedin         : "jan-christel-868a0621"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : *twitter
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-
+# Build settings
+markdown: kramdown
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
+  - _docs
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
   - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
   - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+#theme: minima
 
+#source: .
+#destination: ./_site
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+#posts will be in this sub directory
+permalink: /:categories/:title
+#pagination stuff
+paginate: 8
+paginate_path: /page:num/ #i.e /page2/ for all website hosting links to posts 9 - 16 (if 8 fit on page)
 
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-
-# Defaults
+# Default values
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: post
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
+      layout: page
 
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Australia/Sydney # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
 gems:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+  # Custom variables
+version: "1.0.0"
 
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development

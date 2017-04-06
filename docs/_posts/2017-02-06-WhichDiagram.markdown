@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Choice of Diagram(s)"
 date:   2017-02-06 09:00:00 +1100
 categories: dataViz

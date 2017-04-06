@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Layout - What can I do"
 date:   2017-02-25 20:00:00 +1100
 categories: dataViz

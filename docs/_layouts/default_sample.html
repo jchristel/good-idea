@@ -5,24 +5,10 @@
 
 <body>
 	<div id="wrap">
-	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
-    
-    <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
-
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
-
+    <!-- Header -->
+    {% include header-sample.html %}
     <!-- Main content -->
-	  <div id="container">
+	  <div id="containerSample">
 		  
 		<main>
 
@@ -65,7 +51,7 @@
 	    {% include footer.html %}
 
 	    <!-- Script -->
-      {% include script.html %}
+      
 
 	</div>
 </body>

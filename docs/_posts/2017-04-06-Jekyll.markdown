@@ -1,0 +1,34 @@
+---
+layout: post
+title:  Down the rabbit hole
+date:   2017-04-06 09:00:00 +1100
+categories: dataviz
+tags:
+  - jekyll
+  - github-pages
+---
+
+# Themes, Themes, Themes 
+
+The choice of themes, which are made for Jekyll, is really quite astounding. After some browsing I decided to go with this one for the blog and this one for the website.
+The idea here was that the varies D3 sample pages will have a base layout shared with landing site in terms of header and footer.
+
+Some little tweaks here and there and I will be good to go...so I thought... 
+
+## SASS
+
+While the blog theme had just the bare minimum of sass files, the website theme was pretty much on the opposing end of the spectrum. The _include and _sass folder contained a lot of variable definition files which, in turn, where used in the .sass files...somewhere. Whilst I can see the benefit of this modular setup, trying to pry it apart was a bit like playing Jenga. The tower came crashing down quite quickly
+
+Another issues was the shear size of the final main.css file. A couple of thousand lines take time to process not to mention some of the css related warnings displayed in the debug window of my browser. There are tools out there which cut a css file to size depending on what is actually used on a web site. Drawback of the tools I found was though that they do the purging as an after build event. The original style sheets stay as big as they are.
+
+## Deeper down it goes...
+
+Once I finally had one of the D3 samples going with my Jekyll theme of choice I found that somewhere in those css lines was something effecting my sample layout.
+
+The effects where two fold: 
+* some css was removing a text anchor my java script was relying on, but only sometimes
+* the side bar menu was on top of the D3 graph and I couldnt figure out how to move it
+
+## Keep it simple
+
+After playing with Jekyll for a while to sort out the above issues I decided that simple is better in this case and dropped the idea of two websites. Instead the blog will have a samples summary page and that will be it.
