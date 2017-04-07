@@ -10,7 +10,7 @@ tags:
 
 # Themes, Themes, Themes 
 
-The choice of themes, which are made for Jekyll, is really quite astounding. After some browsing I decided to go with this one for the blog and this one for the website.
+The choice of themes, which are made for Jekyll, is really quite astounding. After some browsing I decided to go with [this]{http://jekyllthemes.org/themes/monochrome/} one for the blog and [this]{https://mmistakes.github.io/minimal-mistakes/} one for the website.
 The idea here was that the varies D3 sample pages will have a base layout shared with landing site in terms of header and footer.
 
 Some little tweaks here and there and I will be good to go...so I thought... 
