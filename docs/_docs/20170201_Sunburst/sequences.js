@@ -6,8 +6,8 @@ var widthGraphics = widthOverall / 3,
     heightGraphics = 700,
     radius = (Math.min(widthGraphics, heightGraphics) / 2) - 10;
 
-console.log(widthGraphics);
-console.log(radius);
+//console.log(widthGraphics);
+//console.log(radius);
 var widthSequence = widthOverall,
     heightSequence = heightOverall/4,
     paddingSequence = 100;
