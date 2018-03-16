@@ -10,13 +10,19 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "RCR": "#5687d1",
-  "BVN": "#7b615c",
-  "AR": "#de783b",
-  "DRW": "#6ab975",
-  "other": "#a173d1",
-  "end": "#bbbbbb"
+	"RCR": "#5687d1",
+	"BVN": "#7b615c",
+	"ARC": "#de783b",
+	"DRW": "#6ab975",
+	"other": "#a173d1",
+	"end": "#bbbbbb"
 };
+
+//variable returning a colour value
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+//variable returning a colour value
+//var colors = d3.scaleOrdinal(d3.schemeCategory20);
 
 // Total size of all segments; we set this later, after loading the data.
 var totalSize = 0; 
@@ -41,7 +47,7 @@ var arc = d3.arc()
 // row, and can receive the csv as an array of arrays.
 
 //method creating the sunburst diagram
-d3.json("../Data/flare_2.json", function (error, root) {
+d3.json("../Data/flare_4.json", function (error, root) {
     if (error) throw error;
 	createVisualization(root);
 });
@@ -65,16 +71,22 @@ function createVisualization(json) {
       .attr("r", radius)
       .style("opacity", 0);
 
+	   //setting up data for sunburst diagram
+  var root = d3.hierarchy(json);
+    //returns 1000 if this is a leaf node (no children) ...means i do not need 
+    // a size property in my json data
+  root.sum(function (d) { return (d.children ? 0 : 1000); });
+	
   // Turn the data into a d3 hierarchy and calculate the sums.
-  var root = d3.hierarchy(json)
-      .sum(function(d) { return d.size; })
-      .sort(function(a, b) { return b.value - a.value; });
+  //var root = d3.hierarchy(json)
+   //   .sum(function(d) { return d.size; })
+  //    .sort(function(a, b) { return b.value - a.value; });
   
   // For efficiency, filter nodes to keep only those large enough to see.
-  var nodes = partition(root).descendants()
-      .filter(function(d) {
-          return (d.x1 - d.x0 > 0.005); // 0.005 radians = 0.29 degrees
-      });
+  var nodes = partition(root).descendants();
+     // .filter(function(d) {
+   //       return (d.x1 - d.x0 > 0.005); // 0.005 radians = 0.29 degrees
+  //    });
 
   var path = vis.data([json]).selectAll("path")
       .data(nodes)
@@ -82,7 +94,7 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) { return colors[d.data.name]; })
+      .style("fill", function (d) { return color((d.children ? d : d.parent).data.Id); })
       .style("opacity", 1)
       .on("mouseover", mouseover);
 
@@ -189,14 +201,14 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.name]; });
+      .style("fill", function(d) { return colors[d.data.size]; });
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
-      .text(function(d) { return d.data.name; });
+      .text(function(d) { return d.data.Id; });
 
   // Merge enter and update selections; set position for all nodes.
   entering.merge(trail).attr("transform", function(d, i) {
@@ -258,47 +270,3 @@ function toggleLegend() {
     legend.style("visibility", "hidden");
   }
 }
-
-// Take a 2-column CSV and transform it into a hierarchical structure suitable
-// for a partition layout. The first column is a sequence of step names, from
-// root to leaf, separated by hyphens. The second column is a count of how 
-// often that sequence occurred.
-function buildHierarchy(csv) {
-  var root = {"name": "root", "children": []};
-  for (var i = 0; i < csv.length; i++) {
-    var sequence = csv[i][0];
-    var size = +csv[i][1];
-    if (isNaN(size)) { // e.g. if this is a header row
-      continue;
-    }
-    var parts = sequence.split("-");
-    var currentNode = root;
-    for (var j = 0; j < parts.length; j++) {
-      var children = currentNode["children"];
-      var nodeName = parts[j];
-      var childNode;
-      if (j + 1 < parts.length) {
-   // Not yet at the end of the sequence; move down the tree.
- 	var foundChild = false;
- 	for (var k = 0; k < children.length; k++) {
- 	  if (children[k]["name"] == nodeName) {
- 	    childNode = children[k];
- 	    foundChild = true;
- 	    break;
- 	  }
- 	}
-  // If we don't already have a child node for this branch, create it.
- 	if (!foundChild) {
- 	  childNode = {"name": nodeName, "children": []};
- 	  children.push(childNode);
- 	}
- 	currentNode = childNode;
-      } else {
- 	// Reached the end of the sequence; create a leaf node.
- 	childNode = {"name": nodeName, "size": size};
- 	children.push(childNode);
-      }
-    }
-  }
-  return root;
-};
